@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown {
+    width: 280px;
+    margin: 20px auto;
+}
+
+.dropdown-header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add transition for background-color */
+}
+
+.dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Use cubic-bezier timing function */
+    border-top: none;
+}
+
+.dropdown-content.open {
+    max-height: 200px;
+    overflow: visible;
+    transition: max-height 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Use the same cubic-bezier function for consistency */
+}
+
+
+
+.box {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f0f0f0; /* Light gray background color */
+    margin-bottom: 3px; /* Add margin to create a gap between boxes */
+}
+
+.box:hover {
+    cursor: pointer;
+}
+
+.box:last-child {
+    margin-bottom: 0; /* Remove margin for the last box */
+}
+
+.menu-item {
+    border: 3px solid #000; /* 3px solid black border */
+    padding: 10px; /* Add padding for spacing */
+    text-align: center; /* Center the text horizontally */
+    font-weight: bold; /* Make the text bold */
+    margin: 10px auto; /* Add margin for spacing between items */
+    width: 280px; /* Set the width to match the dropdown width */
+}
+
+.header-text {
+    width: 200px; /* Set a fixed width for the header text container */
+    overflow: hidden;
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    text-overflow: ellipsis; /* Display ellipsis (...) when text overflows */
+}
